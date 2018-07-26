@@ -1,0 +1,5 @@
+01) npm init - to make a package.json
+02) npm i node-sass - to make it work with scss files
+03) in package.json in scripts make a command: "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+04) run command
+05) create .gitignore
