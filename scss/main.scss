@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 *{
   box-sizing: border-box;
@@ -48,7 +47,7 @@ header{
 
 main{
   padding: 4rem;
-  height: 100%;
+  min-height: calc(100vh - 60px);
 
   .icons{
     margin-top: 1rem;
@@ -70,3 +69,97 @@ main{
     }
   }
 }
+
+.about-info{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio';
+  grid-auto-columns: repeat(2, 1fr);
+}
+
+.bio-image{
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: 3px solid $secondary-color;
+
+}
+
+.bio{
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+.job-info{
+  display: flex;
+  flex-direction: row;
+
+  .job{
+    background: lighten($primary-color, 5);
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 5px solid $secondary-color;
+  }
+
+  .job-1{
+    flex: 1;
+    order: 1;
+  }
+  .job-2{
+    flex: 1;
+    order: 2;
+  }
+}
+
+.info-block{
+  margin: 30px 0;
+
+  .education-info, .position-info{
+    float: left;
+  }
+
+  .education-details, .position-details{
+    margin-left: 50vh;
+  }
+
+  .line{
+    margin-top: 3vh;
+    border-bottom: 1px solid $secondary-color;
+  }
+
+  .skill{
+    display: inline-block;
+    background: #777;
+    color: white;
+    border-radius: 16px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+  }
+}
+
+#main-footer{
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+}
+
+.cv{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cv a{
+  padding: 5px 10px;
+  background: darken($primary-color, 5);
+  border-radius: 16px;
+  border: 3px solid $secondary-color;
+
+  &:hover{
+    background: lighten($primary-color, 5);
+    @include easeOut();
+  }
+}
+
+@import 'mobile';
