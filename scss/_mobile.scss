@@ -77,4 +77,47 @@
   .projects{
     grid-template-columns: 1fr;
   }
+
+  .lg-heading{
+      font-size: 3rem!important;
+  }
+
+  .sm-heading{
+    font-size: 1rem!important;
+    }
+
+  .boxes div{
+    font-size: 1rem;
+    padding: 0.3rem 1.3rem;
+
+    &:hover {
+      padding: 0.2rem 0.6rem;
+    }
+  }
+
+  .menu-branding{
+    height: 25vh;
+    //transform: translate(100%,0);
+
+    .portrait{
+      background: url('../img/portrait-xsmall.jpg');
+      width: 125px;
+      height: 125px;
+    }
+  }
+
+  main#cv .info-block {
+    margin: 15px 0;
+
+    .education-info, .position-info {
+      float: none;
+      display: block;
+    }
+
+    .education-details, .position-details {
+      margin: 15px 0 0 0;
+      display: block;
+    }
+ }
+
 }

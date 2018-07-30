@@ -313,4 +313,27 @@ main {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .lg-heading {
+    font-size: 3rem !important; }
+  .sm-heading {
+    font-size: 1rem !important; }
+  .boxes div {
+    font-size: 1rem;
+    padding: 0.3rem 1.3rem; }
+    .boxes div:hover {
+      padding: 0.2rem 0.6rem; }
+  .menu-branding {
+    height: 25vh; }
+    .menu-branding .portrait {
+      background: url("../img/portrait-xsmall.jpg");
+      width: 125px;
+      height: 125px; }
+  main#cv .info-block {
+    margin: 15px 0; }
+    main#cv .info-block .education-info, main#cv .info-block .position-info {
+      float: none;
+      display: block; }
+    main#cv .info-block .education-details, main#cv .info-block .position-details {
+      margin: 15px 0 0 0;
+      display: block; } }
