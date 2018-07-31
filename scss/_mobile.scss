@@ -11,6 +11,10 @@
   .projects{
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .projects img {
+    height: 150px;
+  }
 }
 
 // tablets & small laptop
@@ -66,6 +70,18 @@
   .projects{
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .projects img {
+    height: 142px;
+  }
+  .boxes div{
+    font-size: 1rem;
+    padding: 0.3rem 1.3rem;
+
+    &:hover {
+      padding: 0.2rem 0.6rem;
+    }
+  }
 }
 
 // smartphones
@@ -97,7 +113,6 @@
 
   .menu-branding{
     height: 25vh;
-    //transform: translate(100%,0);
 
     .portrait{
       background: url('../img/portrait-xsmall.jpg');
@@ -119,5 +134,13 @@
       display: block;
     }
  }
+
+  .bio p{
+    font-size:18px;
+  }
+
+  .projects img {
+    height: 117px;
+  }
 
 }
