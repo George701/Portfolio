@@ -60,13 +60,12 @@
     width: 50%;
     height: 100vh;
     overflow: hidden;
-    opacity: 0.9;
   }
 
   &-nav{
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: rgba(darken($primary-color, 5), 0.9);
     list-style: none;
     transform: translate(0, -100%);
     @include easeOut();
@@ -79,7 +78,7 @@
 
   // branding side
   &-branding{
-    background: $primary-color;
+    background: rgba($primary-color, 0.9);
     transform: translate(0, 100%);
     @include easeOut();
 
@@ -94,6 +93,7 @@
       background: url(../img/portrait.jpg);
       border: solid 3px $secondary-color;
       border-radius: 50%;
+      opacity: 1!important;
     }
   }
 
