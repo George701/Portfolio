@@ -36,19 +36,18 @@
     float: left;
     width: 50%;
     height: 100vh;
-    overflow: hidden;
-    opacity: 0.9; }
+    overflow: hidden; }
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: rgba(55, 55, 55, 0.9);
     list-style: none;
     transform: translate(0, -100%);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate(0, 0); }
   .menu-branding {
-    background: #444;
+    background: rgba(68, 68, 68, 0.9);
     transform: translate(0, 100%);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -58,7 +57,8 @@
       height: 250px;
       background: url(../img/portrait.jpg);
       border: solid 3px #cc9900;
-      border-radius: 50%; }
+      border-radius: 50%;
+      opacity: 1 !important; }
   .menu .nav-item {
     transform: translate(600px, 0);
     transition: all 0.5s ease-out; }
@@ -139,7 +139,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: 100vh; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -226,25 +226,6 @@ main {
       border-color: #cc9900;
       transition: all 0.5s ease-out; }
 
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
-  .boxes div {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #cc9900;
-      color: #DDD; }
-      .boxes div:hover span {
-        color: #DDD; }
-
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -267,8 +248,63 @@ main {
   text-align: center;
   padding: 1rem;
   background: #2b2b2b;
-  color: #DDD;
-  height: 60px; }
+  color: #DDD; }
+
+.f-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 300px; }
+
+.f-box {
+  padding-top: 1vh; }
+  .f-box.one {
+    flex: 1; }
+    .f-box.one a {
+      text-align: left;
+      display: block;
+      font-size: 17px; }
+      .f-box.one a:hover {
+        color: #cc9900;
+        transition: all 0.5s ease-out; }
+      .f-box.one a.current {
+        color: #cc9900; }
+  .f-box.two {
+    flex: 2;
+    width: 100%; }
+    .f-box.two form textarea {
+      overflow: hidden;
+      height: 100px;
+      resize: none; }
+    .f-box.two form input, .f-box.two form textarea {
+      display: block;
+      width: 100%;
+      padding: 10px 10px;
+      margin: 10px 0 10px 0;
+      border-radius: 3px;
+      border: none; }
+      .f-box.two form input:focus, .f-box.two form textarea:focus {
+        transition: all 0.5s ease-out;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 3px 2px #cc9900;
+        background: #444;
+        color: #DDD; }
+    .f-box.two form .btn-contact {
+      background: #434343;
+      color: #DDD; }
+      .f-box.two form .btn-contact:hover {
+        background: #cc9900;
+        transition: all 0.5s ease-out; }
+  .f-box.three {
+    flex: 1;
+    text-align: right; }
+    .f-box.three a {
+      display: block;
+      margin-bottom: 5px; }
+      .f-box.three a:hover {
+        color: #cc9900;
+        transition: all 0.5s ease-out; }
 
 @media screen and (min-width: 1170px) {
   .projects {
@@ -350,4 +386,6 @@ main {
   .bio p {
     font-size: 18px; }
   .projects img {
-    height: 117px; } }
+    height: 117px; }
+  .f-container {
+    display: none; } }
