@@ -4,6 +4,16 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
+  main#cv .info-block {
+
+    .education-info, .position-info {
+    }
+
+    .education-details, .position-details {
+      text-align: right;
+    }
+  }
+
 }
 
 // desktop & laptop
