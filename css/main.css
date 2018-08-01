@@ -254,21 +254,21 @@ main {
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 300px; }
+  height: 264px; }
 
 .f-box {
   padding-top: 1vh; }
   .f-box.one {
     flex: 1; }
-    .f-box.one a {
-      text-align: left;
-      display: block;
-      font-size: 17px; }
-      .f-box.one a:hover {
-        color: #cc9900;
-        transition: all 0.5s ease-out; }
-      .f-box.one a.current {
-        color: #cc9900; }
+    .f-box.one div {
+      text-align: left; }
+      .f-box.one div a {
+        font-size: 17px; }
+        .f-box.one div a:hover {
+          color: #cc9900;
+          transition: all 0.5s ease-out; }
+        .f-box.one div a.current {
+          color: #cc9900; }
   .f-box.two {
     flex: 2;
     width: 100%; }
@@ -299,16 +299,17 @@ main {
   .f-box.three {
     flex: 1;
     text-align: right; }
-    .f-box.three a {
-      display: block;
+    .f-box.three div {
       margin-bottom: 5px; }
-      .f-box.three a:hover {
+      .f-box.three div a:hover {
         color: #cc9900;
         transition: all 0.5s ease-out; }
 
 @media screen and (min-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  main#cv .info-block .education-details, main#cv .info-block .position-details {
+    text-align: right; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
