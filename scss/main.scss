@@ -74,7 +74,7 @@ main{
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio';
-  grid-auto-columns: repeat(2, 1fr);
+  grid-auto-columns: repeat(3, 1fr);
 }
 
 .bio-image{
@@ -108,6 +108,10 @@ main{
   .job-2{
     flex: 1;
     order: 2;
+  }
+  .job-3{
+    flex:1;
+    order:3;
   }
 }
 
