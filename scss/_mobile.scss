@@ -72,6 +72,10 @@
             'bio';
     grid-template-columns: 1fr;
   }
+    
+    .doc-block{
+        flex-direction: column;
+      }
 
   .job-info{
     flex-direction: column;
