@@ -138,7 +138,7 @@ header {
   color: #1565c0; }
 
 main {
-  padding: 4rem;
+  padding: 0 4rem;
   min-height: 100vh; }
   main .icons {
     margin-top: 1rem; }
@@ -329,17 +329,24 @@ main {
     text-align: right; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  .lg-heading {
+    font-size: 5rem !important; }
+  .sm-heading {
+    font-size: 2rem !important; }
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .projects img {
     height: 150px; } }
 
 @media screen and (max-width: 768px) {
-  main {
+  .lg-heading {
+    font-size: 4.5rem !important; }
+  .sm-heading {
+    font-size: 1.3rem !important; }
+  .main {
     alighn-items: center;
-    text-align: center;
-    padding: 4rem 4rem 0 4rem; }
-    main .lg-heading {
+    text-align: center; }
+    .main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
   ul.menu-nav, div.menu-branding {

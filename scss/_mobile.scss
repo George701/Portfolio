@@ -18,6 +18,13 @@
 
 // desktop & laptop
 @include mediaLg{
+    .lg-heading{
+          font-size: 5rem!important;
+      }
+    .sm-heading{
+        font-size: 2rem!important;
+    }
+    
   .projects{
     grid-template-columns: repeat(3, 1fr);
   }
@@ -29,10 +36,17 @@
 
 // tablets & small laptop
 @include mediaMd{
-  main{
+    
+    .lg-heading{
+          font-size: 4.5rem!important;
+      }
+    .sm-heading{
+        font-size: 1.3rem!important;
+    }
+    
+  .main{
     alighn-items: center;
     text-align: center;
-      padding: 4rem 4rem 0 4rem;
 
     .lg-heading{
       line-height: 1;
