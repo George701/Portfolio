@@ -206,18 +206,23 @@ main {
     padding: 5px 10px;
     margin: 5px 3px; }
 
-.cv {
-  text-align: center;
-  margin-top: 2rem; }
-
-.cv a {
-  padding: 5px 10px;
-  background: #b0b0b0;
-  border-radius: 16px;
-  border: 3px solid #1565c0;
-  margin: 0 2rem; }
-  .cv a:hover {
+.doc-block {
+  display: flex;
+  flex-direction: row; }
+  .doc-block .doc-unit {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
     background: #cacaca;
+    border-radius: 5px; }
+
+.redirect-link {
+  text-align: center; }
+
+.redirect-document-link {
+  color: #1259a9; }
+  .redirect-document-link:hover {
+    color: #1871d7;
     transition: all 0.5s ease-out; }
 
 .projects {
@@ -351,6 +356,8 @@ main {
   .about-info {
     grid-template-areas: 'bioimage' 'bio';
     grid-template-columns: 1fr; }
+  .doc-block {
+    flex-direction: column; }
   .job-info {
     flex-direction: column; }
   .projects {
